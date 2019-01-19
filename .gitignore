@@ -1,0 +1,14 @@
+man/
+bld/sql/data/
+*.[oa]
+*.pdb
+*.lib
+*.sdf
+*.html
+*.obj
+*.exe
+*.tlog
+*.ilk
+*.log
+*.tlog
+*.sdf

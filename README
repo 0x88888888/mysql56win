@@ -1,0 +1,52 @@
+调试，探索用
+版本:mysql-5.6.41
+
+初始化
+D:/mysql56win/bld/sql/Debug/mysqld.exe --no-defaults --console --bootstrap --lc-messages-dir=D:/mysql56win/bld/sql/share --basedir=. --datadir=. --default-storage-engine=MyISAM --default-tmp-storage-engine=MyISAM --loose-skip-ndbcluster --max_allowed_packet=8M --net_buffer_length=16K
+
+D:/mysql56win/bld/sql/Debug/mysqld.exe 
+
+--no-defaults --console --bootstrap --lc-messages-dir=D:/mysql56win/bld/sql/share --basedir=. --datadir=./data --default-storage-engine=innodb --default-tmp-storage-engine=innodb --loose-skip-ndbcluster --max_allowed_packet=8M --net_buffer_length=16K  --innodb_data_file_path=ibdata1:200M;ibdata2:500M;ibdata3:800M:autoextend 
+
+--no-defaults --console --bootstrap --lc-messages-dir=D:/mysql56win/bld/sql/share --basedir=. --datadir=./data --default-storage-engine=innodb --default-tmp-storage-engine=innodb --loose-skip-ndbcluster --max_allowed_packet=8M --net_buffer_length=16K  --innodb_data_file_path=ibdata1:200M;ibdata2:500M;ibdata3:800M:autoextend --innodb_file_per_table=1  --innodb_undo_tablespaces=10 --innodb_log_files_in_group=4 --innodb_log_file_size=12M
+# innodb_undo_tablespaces
+
+mysqld --console --bootstrap --defaults-file=my.ini
+
+--initialize 
+
+input file bootstrap.sql, current directory D:/mysql56win/bld/sql/data
+
+
+在ha_innodb.cc中的innobase_init中修改innodb数据文件路径innobase_data_file_path 
+
+
+
+
+
+
+
+echo "# mysql56win" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/0x88888888/mysql56win.git
+git push -u origin master
+
+
+
+source_downloads/
+man/
+*.[oa]
+*.pdb
+*.lib
+*.sdf
+*.html
+*.obj
+*.exe
+*.tlog
+*.ilk
+*.log
+bld/sql/data/
+mysql-5.6.41(win).zip
+

@@ -1,0 +1,9 @@
+# CMake generation dependency list for this directory.
+D:/mysql56win/scripts/CMakeLists.txt
+D:/mysql56win/scripts/mysql_config.pl.in
+D:/mysql56win/scripts/mysql_convert_table_format.sh
+D:/mysql56win/scripts/mysql_install_db.pl.in
+D:/mysql56win/scripts/mysql_secure_installation.pl.in
+D:/mysql56win/scripts/mysqld_multi.sh
+D:/mysql56win/scripts/mysqldumpslow.sh
+D:/mysql56win/scripts/mysqlhotcopy.sh

@@ -1,0 +1,76 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/CPack.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/CPackComponent.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/CheckCCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/CheckCSourceRuns.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/CheckCXXSourceRuns.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/CheckFunctionExists.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/CheckIncludeFiles.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/CheckStructHasMember.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/FindGit.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/FindThreads.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/Platform/WindowsPaths.cmake
+C:/Program Files/CMake/share/cmake-3.12/Modules/TestBigEndian.cmake
+C:/Program Files/CMake/share/cmake-3.12/Templates/CPackConfig.cmake.in
+D:/mysql56win/CMakeLists.txt
+D:/mysql56win/VERSION
+D:/mysql56win/bld/CMakeFiles/3.12.2/CMakeCCompiler.cmake
+D:/mysql56win/bld/CMakeFiles/3.12.2/CMakeCXXCompiler.cmake
+D:/mysql56win/bld/CMakeFiles/3.12.2/CMakeRCCompiler.cmake
+D:/mysql56win/bld/CMakeFiles/3.12.2/CMakeSystem.cmake
+D:/mysql56win/bld/info_macros.cmake
+D:/mysql56win/cmake/abi_check.cmake
+D:/mysql56win/cmake/build_configurations/compiler_options.cmake
+D:/mysql56win/cmake/build_configurations/feature_set.cmake
+D:/mysql56win/cmake/character_sets.cmake
+D:/mysql56win/cmake/cmake_parse_arguments.cmake
+D:/mysql56win/cmake/cpack_source_ignore_files.cmake
+D:/mysql56win/cmake/cpu_info.cmake
+D:/mysql56win/cmake/dtrace.cmake
+D:/mysql56win/cmake/info_macros.cmake.in
+D:/mysql56win/cmake/install_layout.cmake
+D:/mysql56win/cmake/install_macros.cmake
+D:/mysql56win/cmake/libevent.cmake
+D:/mysql56win/cmake/libutils.cmake
+D:/mysql56win/cmake/maintainer.cmake
+D:/mysql56win/cmake/mysql_add_executable.cmake
+D:/mysql56win/cmake/mysql_version.cmake
+D:/mysql56win/cmake/os/Windows.cmake
+D:/mysql56win/cmake/os/WindowsCache.cmake
+D:/mysql56win/cmake/package_name.cmake
+D:/mysql56win/cmake/plugin.cmake
+D:/mysql56win/cmake/readline.cmake
+D:/mysql56win/cmake/ssl.cmake
+D:/mysql56win/cmake/tags.cmake
+D:/mysql56win/cmake/versioninfo.rc.in
+D:/mysql56win/cmake/zlib.cmake
+D:/mysql56win/config.h.cmake
+D:/mysql56win/configure.cmake
+D:/mysql56win/include/mysql_version.h.in
+D:/mysql56win/sql/sql_builtin.cc.in

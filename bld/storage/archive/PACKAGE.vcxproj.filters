@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\mysql56win\bld\CMakeFiles\c3d46b5af25ae56eb214b5af9b461712\PACKAGE_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{71A31420-2CAE-30F1-98B3-71E3D3197705}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

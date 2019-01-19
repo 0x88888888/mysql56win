@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+D:/mysql56win/cmake/bison.cmake
+D:/mysql56win/cmake/create_initial_db.cmake.in
+D:/mysql56win/cmake/make_dist.cmake.in
+D:/mysql56win/sql/CMakeLists.txt

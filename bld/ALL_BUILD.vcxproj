@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{50F64CAE-BE0A-3EE3-83FE-3453D76BA78C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\mysql56win\bld\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\mysql56win\bld\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\mysql56win\bld\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\mysql56win\bld\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\mysql56win\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/mysql56win/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/mysql56win -BD:/mysql56win/bld --check-stamp-file D:/mysql56win/bld/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/mysql56win/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckCXXSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.12\Templates\CPackConfig.cmake.in;D:\mysql56win\CMakeLists.txt;D:\mysql56win\VERSION;D:\mysql56win\bld\CMakeFiles\3.12.2\CMakeCCompiler.cmake;D:\mysql56win\bld\CMakeFiles\3.12.2\CMakeCXXCompiler.cmake;D:\mysql56win\bld\CMakeFiles\3.12.2\CMakeRCCompiler.cmake;D:\mysql56win\bld\CMakeFiles\3.12.2\CMakeSystem.cmake;D:\mysql56win\bld\info_macros.cmake;D:\mysql56win\cmake\abi_check.cmake;D:\mysql56win\cmake\build_configurations\compiler_options.cmake;D:\mysql56win\cmake\build_configurations\feature_set.cmake;D:\mysql56win\cmake\character_sets.cmake;D:\mysql56win\cmake\cmake_parse_arguments.cmake;D:\mysql56win\cmake\cpack_source_ignore_files.cmake;D:\mysql56win\cmake\cpu_info.cmake;D:\mysql56win\cmake\dtrace.cmake;D:\mysql56win\cmake\info_macros.cmake.in;D:\mysql56win\cmake\install_layout.cmake;D:\mysql56win\cmake\install_macros.cmake;D:\mysql56win\cmake\libevent.cmake;D:\mysql56win\cmake\libutils.cmake;D:\mysql56win\cmake\maintainer.cmake;D:\mysql56win\cmake\mysql_add_executable.cmake;D:\mysql56win\cmake\mysql_version.cmake;D:\mysql56win\cmake\os\Windows.cmake;D:\mysql56win\cmake\os\WindowsCache.cmake;D:\mysql56win\cmake\package_name.cmake;D:\mysql56win\cmake\plugin.cmake;D:\mysql56win\cmake\readline.cmake;D:\mysql56win\cmake\ssl.cmake;D:\mysql56win\cmake\tags.cmake;D:\mysql56win\cmake\versioninfo.rc.in;D:\mysql56win\cmake\zlib.cmake;D:\mysql56win\config.h.cmake;D:\mysql56win\configure.cmake;D:\mysql56win\include\mysql_version.h.in;D:\mysql56win\sql\sql_builtin.cc.in;D:\mysql56win\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\mysql56win\bld\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/mysql56win/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/mysql56win -BD:/mysql56win/bld --check-stamp-file D:/mysql56win/bld/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/mysql56win/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckCXXSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.12\Templates\CPackConfig.cmake.in;D:\mysql56win\CMakeLists.txt;D:\mysql56win\VERSION;D:\mysql56win\bld\CMakeFiles\3.12.2\CMakeCCompiler.cmake;D:\mysql56win\bld\CMakeFiles\3.12.2\CMakeCXXCompiler.cmake;D:\mysql56win\bld\CMakeFiles\3.12.2\CMakeRCCompiler.cmake;D:\mysql56win\bld\CMakeFiles\3.12.2\CMakeSystem.cmake;D:\mysql56win\bld\info_macros.cmake;D:\mysql56win\cmake\abi_check.cmake;D:\mysql56win\cmake\build_configurations\compiler_options.cmake;D:\mysql56win\cmake\build_configurations\feature_set.cmake;D:\mysql56win\cmake\character_sets.cmake;D:\mysql56win\cmake\cmake_parse_arguments.cmake;D:\mysql56win\cmake\cpack_source_ignore_files.cmake;D:\mysql56win\cmake\cpu_info.cmake;D:\mysql56win\cmake\dtrace.cmake;D:\mysql56win\cmake\info_macros.cmake.in;D:\mysql56win\cmake\install_layout.cmake;D:\mysql56win\cmake\install_macros.cmake;D:\mysql56win\cmake\libevent.cmake;D:\mysql56win\cmake\libutils.cmake;D:\mysql56win\cmake\maintainer.cmake;D:\mysql56win\cmake\mysql_add_executable.cmake;D:\mysql56win\cmake\mysql_version.cmake;D:\mysql56win\cmake\os\Windows.cmake;D:\mysql56win\cmake\os\WindowsCache.cmake;D:\mysql56win\cmake\package_name.cmake;D:\mysql56win\cmake\plugin.cmake;D:\mysql56win\cmake\readline.cmake;D:\mysql56win\cmake\ssl.cmake;D:\mysql56win\cmake\tags.cmake;D:\mysql56win\cmake\versioninfo.rc.in;D:\mysql56win\cmake\zlib.cmake;D:\mysql56win\config.h.cmake;D:\mysql56win\configure.cmake;D:\mysql56win\include\mysql_version.h.in;D:\mysql56win\sql\sql_builtin.cc.in;D:\mysql56win\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\mysql56win\bld\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/mysql56win/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/mysql56win -BD:/mysql56win/bld --check-stamp-file D:/mysql56win/bld/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/mysql56win/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckCXXSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.12\Templates\CPackConfig.cmake.in;D:\mysql56win\CMakeLists.txt;D:\mysql56win\VERSION;D:\mysql56win\bld\CMakeFiles\3.12.2\CMakeCCompiler.cmake;D:\mysql56win\bld\CMakeFiles\3.12.2\CMakeCXXCompiler.cmake;D:\mysql56win\bld\CMakeFiles\3.12.2\CMakeRCCompiler.cmake;D:\mysql56win\bld\CMakeFiles\3.12.2\CMakeSystem.cmake;D:\mysql56win\bld\info_macros.cmake;D:\mysql56win\cmake\abi_check.cmake;D:\mysql56win\cmake\build_configurations\compiler_options.cmake;D:\mysql56win\cmake\build_configurations\feature_set.cmake;D:\mysql56win\cmake\character_sets.cmake;D:\mysql56win\cmake\cmake_parse_arguments.cmake;D:\mysql56win\cmake\cpack_source_ignore_files.cmake;D:\mysql56win\cmake\cpu_info.cmake;D:\mysql56win\cmake\dtrace.cmake;D:\mysql56win\cmake\info_macros.cmake.in;D:\mysql56win\cmake\install_layout.cmake;D:\mysql56win\cmake\install_macros.cmake;D:\mysql56win\cmake\libevent.cmake;D:\mysql56win\cmake\libutils.cmake;D:\mysql56win\cmake\maintainer.cmake;D:\mysql56win\cmake\mysql_add_executable.cmake;D:\mysql56win\cmake\mysql_version.cmake;D:\mysql56win\cmake\os\Windows.cmake;D:\mysql56win\cmake\os\WindowsCache.cmake;D:\mysql56win\cmake\package_name.cmake;D:\mysql56win\cmake\plugin.cmake;D:\mysql56win\cmake\readline.cmake;D:\mysql56win\cmake\ssl.cmake;D:\mysql56win\cmake\tags.cmake;D:\mysql56win\cmake\versioninfo.rc.in;D:\mysql56win\cmake\zlib.cmake;D:\mysql56win\config.h.cmake;D:\mysql56win\configure.cmake;D:\mysql56win\include\mysql_version.h.in;D:\mysql56win\sql\sql_builtin.cc.in;D:\mysql56win\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\mysql56win\bld\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/mysql56win/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/mysql56win -BD:/mysql56win/bld --check-stamp-file D:/mysql56win/bld/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/mysql56win/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckCXXSourceRuns.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\TestBigEndian.cmake;C:\Program Files\CMake\share\cmake-3.12\Templates\CPackConfig.cmake.in;D:\mysql56win\CMakeLists.txt;D:\mysql56win\VERSION;D:\mysql56win\bld\CMakeFiles\3.12.2\CMakeCCompiler.cmake;D:\mysql56win\bld\CMakeFiles\3.12.2\CMakeCXXCompiler.cmake;D:\mysql56win\bld\CMakeFiles\3.12.2\CMakeRCCompiler.cmake;D:\mysql56win\bld\CMakeFiles\3.12.2\CMakeSystem.cmake;D:\mysql56win\bld\info_macros.cmake;D:\mysql56win\cmake\abi_check.cmake;D:\mysql56win\cmake\build_configurations\compiler_options.cmake;D:\mysql56win\cmake\build_configurations\feature_set.cmake;D:\mysql56win\cmake\character_sets.cmake;D:\mysql56win\cmake\cmake_parse_arguments.cmake;D:\mysql56win\cmake\cpack_source_ignore_files.cmake;D:\mysql56win\cmake\cpu_info.cmake;D:\mysql56win\cmake\dtrace.cmake;D:\mysql56win\cmake\info_macros.cmake.in;D:\mysql56win\cmake\install_layout.cmake;D:\mysql56win\cmake\install_macros.cmake;D:\mysql56win\cmake\libevent.cmake;D:\mysql56win\cmake\libutils.cmake;D:\mysql56win\cmake\maintainer.cmake;D:\mysql56win\cmake\mysql_add_executable.cmake;D:\mysql56win\cmake\mysql_version.cmake;D:\mysql56win\cmake\os\Windows.cmake;D:\mysql56win\cmake\os\WindowsCache.cmake;D:\mysql56win\cmake\package_name.cmake;D:\mysql56win\cmake\plugin.cmake;D:\mysql56win\cmake\readline.cmake;D:\mysql56win\cmake\ssl.cmake;D:\mysql56win\cmake\tags.cmake;D:\mysql56win\cmake\versioninfo.rc.in;D:\mysql56win\cmake\zlib.cmake;D:\mysql56win\config.h.cmake;D:\mysql56win\configure.cmake;D:\mysql56win\include\mysql_version.h.in;D:\mysql56win\sql\sql_builtin.cc.in;D:\mysql56win\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\mysql56win\bld\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\mysql56win\bld\ZERO_CHECK.vcxproj">
+      <Project>{1E02B322-2F20-3C96-A837-9A2CA039DC19}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\extra\GenError.vcxproj">
+      <Project>{0575A7FE-C5C4-3B30-8B7A-ABA778000C82}</Project>
+      <Name>GenError</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\scripts\GenFixPrivs.vcxproj">
+      <Project>{5C251CAC-9290-3208-8F9E-C574AFC65955}</Project>
+      <Name>GenFixPrivs</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\INFO_BIN.vcxproj">
+      <Project>{09C74966-190E-3367-BA8A-1A2249036E95}</Project>
+      <Name>INFO_BIN</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\INFO_SRC.vcxproj">
+      <Project>{D8991E09-5D5D-35A3-ACF2-F2218E42C8BC}</Project>
+      <Name>INFO_SRC</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\storage\archive\archive.vcxproj">
+      <Project>{5BE1B288-0DF9-33FC-8385-A78698D7FCB1}</Project>
+      <Name>archive</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\plugin\audit_null\audit_null.vcxproj">
+      <Project>{5948EB3E-36DD-37D8-BAB0-785CB162F78B}</Project>
+      <Name>audit_null</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\plugin\auth\auth.vcxproj">
+      <Project>{30D84BA4-3034-3674-926B-3B4C0C0D0F4E}</Project>
+      <Name>auth</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\plugin\auth\auth_test_plugin.vcxproj">
+      <Project>{BC6D16C5-8325-3DB5-A47E-E5098F019B76}</Project>
+      <Name>auth_test_plugin</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\libmysql\authentication_win\auth_win_client.vcxproj">
+      <Project>{681C5783-FAAE-3A03-86F8-BC6BC7830BB6}</Project>
+      <Name>auth_win_client</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\mysys\base64_test.vcxproj">
+      <Project>{6647334A-6AF1-3873-9530-D57915465F17}</Project>
+      <Name>base64_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\sql\binlog.vcxproj">
+      <Project>{95BC3C90-778B-34D2-9E6C-F6A9777E48D4}</Project>
+      <Name>binlog</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\storage\blackhole\blackhole.vcxproj">
+      <Project>{8B14487C-6E4F-3391-9524-709E34F10389}</Project>
+      <Name>blackhole</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\libmysql\clientlib.vcxproj">
+      <Project>{3C1D98A6-AFFA-3479-A21E-5C2EEB1A2FE3}</Project>
+      <Name>clientlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\extra\comp_err.vcxproj">
+      <Project>{42EAA1B1-9C41-3289-8558-275936E5FBB0}</Project>
+      <Name>comp_err</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\scripts\comp_sql.vcxproj">
+      <Project>{C850304C-E4B8-3DA8-8D79-C2D699EE7373}</Project>
+      <Name>comp_sql</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\plugin\connection_control\connection_control.vcxproj">
+      <Project>{DA7A43F0-F60F-3268-AA51-CCFAFFD155AD}</Project>
+      <Name>connection_control</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\storage\csv\csv.vcxproj">
+      <Project>{CEE5C93E-4457-3799-AE52-A0ADA0DED4C9}</Project>
+      <Name>csv</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\plugin\daemon_example\daemon_example.vcxproj">
+      <Project>{D9C084BD-404A-39FD-87EA-0AC52E40DFC2}</Project>
+      <Name>daemon_example</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\dbug\dbug.vcxproj">
+      <Project>{71B1D009-8A39-368B-933C-FF88CDB1A83E}</Project>
+      <Name>dbug</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\client\echo.vcxproj">
+      <Project>{7767394C-417B-3C10-8DA2-7D8932866118}</Project>
+      <Name>echo</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\storage\federated\federated.vcxproj">
+      <Project>{DA84AEEE-A347-323D-ABEE-230CF29E9DA2}</Project>
+      <Name>federated</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\plugin\fulltext\ftexample.vcxproj">
+      <Project>{85A14035-D30E-3495-B6F4-457C58DE8234}</Project>
+      <Name>ftexample</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\sql\gen_lex_hash.vcxproj">
+      <Project>{0539AEF7-C060-3059-95FB-0A3F296016E4}</Project>
+      <Name>gen_lex_hash</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\sql\gen_lex_token.vcxproj">
+      <Project>{69D09D54-B7E4-354D-8138-6D485C8D1ED3}</Project>
+      <Name>gen_lex_token</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\storage\heap\heap.vcxproj">
+      <Project>{CA868069-E06C-3FBD-B186-DE85C24B0A8E}</Project>
+      <Name>heap</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\sql\initial_database.vcxproj">
+      <Project>{265FE6C3-95E0-3ACF-B85F-9FE2BA0D33A5}</Project>
+      <Name>initial_database</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\storage\innobase\innobase.vcxproj">
+      <Project>{D92C5AE4-4EBC-3300-BFC2-7CA305DC04AD}</Project>
+      <Name>innobase</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\extra\innochecksum.vcxproj">
+      <Project>{8273036C-4BCE-3687-9661-4CF1D21A83F7}</Project>
+      <Name>innochecksum</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\libmysql\libmysql.vcxproj">
+      <Project>{85606C79-36B7-3140-8403-79D279C96969}</Project>
+      <Name>libmysql</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\sql\master.vcxproj">
+      <Project>{E4DAD3AB-7B7C-32E4-B00F-BF8FA4DE7858}</Project>
+      <Name>master</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\extra\my_print_defaults.vcxproj">
+      <Project>{0FD2AA61-C5CF-3217-95F3-C08C29E570E8}</Project>
+      <Name>my_print_defaults</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\mysql-test\lib\My\SafeProcess\my_safe_kill.vcxproj">
+      <Project>{3C8EE119-0C7F-39C8-8ED6-016E32E48316}</Project>
+      <Name>my_safe_kill</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\mysql-test\lib\My\SafeProcess\my_safe_process.vcxproj">
+      <Project>{E8F56E8C-26BF-3CEC-B7B2-B241921FABCF}</Project>
+      <Name>my_safe_process</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\storage\myisam\myisam.vcxproj">
+      <Project>{234D5220-E9DF-3B1B-8C6A-2689EB032F9E}</Project>
+      <Name>myisam</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\storage\myisam\myisam_ftdump.vcxproj">
+      <Project>{965D2432-6449-35E2-8E41-DA8E86401BD6}</Project>
+      <Name>myisam_ftdump</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\storage\myisam\myisamchk.vcxproj">
+      <Project>{D03C7059-73E3-329C-9A53-FD7E56CFD475}</Project>
+      <Name>myisamchk</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\storage\myisam\myisamlog.vcxproj">
+      <Project>{C9882C12-86E6-3196-B70A-299A8D63083B}</Project>
+      <Name>myisamlog</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\storage\myisammrg\myisammrg.vcxproj">
+      <Project>{A2512A20-8534-39AF-8A9B-B68B7940D908}</Project>
+      <Name>myisammrg</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\storage\myisam\myisampack.vcxproj">
+      <Project>{4AE24FEC-B0A5-395F-82DF-54A26ACE236B}</Project>
+      <Name>myisampack</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\client\mysql.vcxproj">
+      <Project>{CBD3B2A0-75C9-3C2C-9DDD-D34058FDA717}</Project>
+      <Name>mysql</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\tests\mysql_client_test.vcxproj">
+      <Project>{2FA445D8-1A29-386A-BE26-043D0B8A2C1F}</Project>
+      <Name>mysql_client_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\client\mysql_config_editor.vcxproj">
+      <Project>{87902C69-2118-3D64-8CBD-A5466C0ECE3C}</Project>
+      <Name>mysql_config_editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\plugin\auth\mysql_no_login.vcxproj">
+      <Project>{545D95A6-7D33-39AE-9422-9FC47C05446F}</Project>
+      <Name>mysql_no_login</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\client\mysql_plugin.vcxproj">
+      <Project>{01C7FE44-19C9-392E-9818-98C7B8BF4C9F}</Project>
+      <Name>mysql_plugin</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\sql\mysql_tzinfo_to_sql.vcxproj">
+      <Project>{6BFCF12B-F7B2-378D-9CEC-EBEFA290B87A}</Project>
+      <Name>mysql_tzinfo_to_sql</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\client\mysql_upgrade.vcxproj">
+      <Project>{7256827B-CE56-3B77-BCE1-E4A2CF3647DB}</Project>
+      <Name>mysql_upgrade</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\client\mysqladmin.vcxproj">
+      <Project>{2981AA4E-6F4A-3257-B329-A3FAC6C1760E}</Project>
+      <Name>mysqladmin</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\client\mysqlbinlog.vcxproj">
+      <Project>{D2AFE2C7-4215-30B3-9F9F-2AE37660DB81}</Project>
+      <Name>mysqlbinlog</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\client\mysqlcheck.vcxproj">
+      <Project>{FF88B1A0-8090-39BC-8D11-838383D29BDF}</Project>
+      <Name>mysqlcheck</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\libmysql\mysqlclient.vcxproj">
+      <Project>{83CAA224-A115-3BAF-A276-99BF32847A3E}</Project>
+      <Name>mysqlclient</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\sql\mysqld.vcxproj">
+      <Project>{C7D30E88-9C53-3EE5-A54D-5D3C4694B00F}</Project>
+      <Name>mysqld</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\client\mysqldump.vcxproj">
+      <Project>{FEBBBD82-9853-3E01-A53C-ADD560F621E1}</Project>
+      <Name>mysqldump</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\client\mysqlimport.vcxproj">
+      <Project>{E1172B24-42BF-3631-902E-EA20CDD4CB89}</Project>
+      <Name>mysqlimport</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\libservices\mysqlservices.vcxproj">
+      <Project>{4D654797-1500-362D-95B9-63A726CCBD76}</Project>
+      <Name>mysqlservices</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\client\mysqlshow.vcxproj">
+      <Project>{625397F1-3A40-364E-9003-540A4FDCEF6A}</Project>
+      <Name>mysqlshow</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\client\mysqlslap.vcxproj">
+      <Project>{3822CC78-A9D4-362A-B6A0-B28D97CA419D}</Project>
+      <Name>mysqlslap</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\client\mysqltest.vcxproj">
+      <Project>{99F77506-5B1E-3686-BA6B-F94594FC9457}</Project>
+      <Name>mysqltest</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\mysys_ssl\mysys_ssl.vcxproj">
+      <Project>{0048292B-3B68-32A6-B396-3F42BD5D0BA1}</Project>
+      <Name>mysys_ssl</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\sql\partition.vcxproj">
+      <Project>{3EBED71A-5ADE-3C8A-B6AB-8CF088257554}</Project>
+      <Name>partition</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\storage\perfschema\perfschema.vcxproj">
+      <Project>{EE3198E8-2E1F-3E15-A865-77AC7425DE0D}</Project>
+      <Name>perfschema</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\extra\perror.vcxproj">
+      <Project>{8F176B47-AA51-3376-9C72-13705D974199}</Project>
+      <Name>perror</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\plugin\auth\qa_auth_client.vcxproj">
+      <Project>{09091E6A-D235-3561-8368-50FE3CBCFC26}</Project>
+      <Name>qa_auth_client</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\plugin\auth\qa_auth_interface.vcxproj">
+      <Project>{8D9982C1-F56C-30DB-8F8B-17793CC5D599}</Project>
+      <Name>qa_auth_interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\plugin\auth\qa_auth_server.vcxproj">
+      <Project>{65702685-8EE5-3F42-92AA-86420107781F}</Project>
+      <Name>qa_auth_server</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\mysys\queues.vcxproj">
+      <Project>{AF520FB9-9C48-30A6-810A-8B03B4296AA7}</Project>
+      <Name>queues</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\regex\regex.vcxproj">
+      <Project>{B028145A-4C2F-3342-A0ED-44AED90BDC54}</Project>
+      <Name>regex</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\extra\replace.vcxproj">
+      <Project>{57EF542C-8264-323A-8DA6-13B83A04CAD1}</Project>
+      <Name>replace</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\extra\resolveip.vcxproj">
+      <Project>{1A4DBAB3-FECB-3939-9D0D-EAA3A1677F06}</Project>
+      <Name>resolveip</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\sql\rpl.vcxproj">
+      <Project>{CD210637-E136-3AA3-9B05-CE079FD1A5DA}</Project>
+      <Name>rpl</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\plugin\semisync\semisync_master.vcxproj">
+      <Project>{21AA6B15-BFB4-3F1C-91D4-A703D856DA56}</Project>
+      <Name>semisync_master</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\plugin\semisync\semisync_slave.vcxproj">
+      <Project>{B1229F5F-0B3C-3499-A746-82B6CB961452}</Project>
+      <Name>semisync_slave</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\sql\slave.vcxproj">
+      <Project>{54315AF3-94A3-3975-903E-EFA5EC34D82C}</Project>
+      <Name>slave</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\storage\spartan\spartan.vcxproj">
+      <Project>{FE8FFE2D-393B-308F-9CB6-EC51DA8084DF}</Project>
+      <Name>spartan</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\sql\sql.vcxproj">
+      <Project>{D877D9A7-24A6-32E8-AE64-E21B6D835D67}</Project>
+      <Name>sql</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\sql\sqlgunitlib.vcxproj">
+      <Project>{FA6FE62C-18C8-3187-8A06-9CBD2658D9D0}</Project>
+      <Name>sqlgunitlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\strings\strings.vcxproj">
+      <Project>{734871BF-5F92-392A-AEE2-852201D352D0}</Project>
+      <Name>strings</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\extra\yassl\taocrypt\taocrypt.vcxproj">
+      <Project>{3A6882DF-F219-3B5E-9120-97C930D417A6}</Project>
+      <Name>taocrypt</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\plugin\udf_services\test_udf_services.vcxproj">
+      <Project>{FE0CD87C-BAC3-3AEF-8AF9-39924032C7B4}</Project>
+      <Name>test_udf_services</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\mysys\thr_lock.vcxproj">
+      <Project>{AB7133D8-18DF-39ED-B6C3-E0ED7C8713B3}</Project>
+      <Name>thr_lock</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\sql\udf_example.vcxproj">
+      <Project>{9689165C-7EAE-375F-B9FF-A5D1B14C5765}</Project>
+      <Name>udf_example</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\plugin\password_validation\validate_password.vcxproj">
+      <Project>{EDB7AEC5-64B6-3155-A6A8-960BB3F2EC32}</Project>
+      <Name>validate_password</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\vio\vio.vcxproj">
+      <Project>{2C8C93C2-E413-3315-84DE-275C927766E5}</Project>
+      <Name>vio</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\extra\yassl\yassl.vcxproj">
+      <Project>{F7C5722E-223B-33D3-9AA4-93406184CB2F}</Project>
+      <Name>yassl</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\zlib\zlib.vcxproj">
+      <Project>{0C911BFA-6B50-3404-A003-8AF58668F7FF}</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

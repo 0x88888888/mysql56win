@@ -1,0 +1,12 @@
+explain select ord_id, item_id, emp_id,customer_id  
+from orders 
+where ord_date in (select max(ord_date) from orders group by (date_format(ord_date,'%Y%m')));
+
+explain select ord_id, item_id, emp_id,customer_id  
+from orders A
+where exists  (
+   select * from
+   (select max(ord_date) as ord_date  from orders group by (date_format(ord_date,'%Y%m')))  B
+   where A.ord_date = B.ord_date
+   );
+

@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3174AFCD-2CCA-3103-91CC-36278834E205}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>mysys</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\mysql56win\bld\mysys\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mysys.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mysys</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\mysql56win\bld\mysys\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mysys.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mysys</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\mysql56win\bld\mysys\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">mysys.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">mysys</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\mysql56win\bld\mysys\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">mysys.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">mysys</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\mysql56win\bld\include;D:\mysql56win\zlib;D:\mysql56win\include;D:\mysql56win\mysys;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4800;4805;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;ENABLED_DEBUG_SYNC;__WIN__;_CRT_SECURE_NO_DEPRECATE;_WIN32_WINNT=0x0501;NOMINMAX;WIN32_LEAN_AND_MEAN;HAVE_CONFIG_H;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;ENABLED_DEBUG_SYNC;__WIN__;_CRT_SECURE_NO_DEPRECATE;_WIN32_WINNT=0x0501;NOMINMAX;WIN32_LEAN_AND_MEAN;HAVE_CONFIG_H;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\mysql56win\bld\include;D:\mysql56win\zlib;D:\mysql56win\include;D:\mysql56win\mysys;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\mysql56win\bld\include;D:\mysql56win\zlib;D:\mysql56win\include;D:\mysql56win\mysys;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\mysql56win\bld\include;D:\mysql56win\zlib;D:\mysql56win\include;D:\mysql56win\mysys;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4800;4805;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;__WIN__;_CRT_SECURE_NO_DEPRECATE;_WIN32_WINNT=0x0501;NOMINMAX;WIN32_LEAN_AND_MEAN;HAVE_CONFIG_H;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;__WIN__;_CRT_SECURE_NO_DEPRECATE;_WIN32_WINNT=0x0501;NOMINMAX;WIN32_LEAN_AND_MEAN;HAVE_CONFIG_H;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\mysql56win\bld\include;D:\mysql56win\zlib;D:\mysql56win\include;D:\mysql56win\mysys;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\mysql56win\bld\include;D:\mysql56win\zlib;D:\mysql56win\include;D:\mysql56win\mysys;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\mysql56win\bld\include;D:\mysql56win\zlib;D:\mysql56win\include;D:\mysql56win\mysys;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4800;4805;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;__WIN__;_CRT_SECURE_NO_DEPRECATE;_WIN32_WINNT=0x0501;NOMINMAX;WIN32_LEAN_AND_MEAN;HAVE_CONFIG_H;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;__WIN__;_CRT_SECURE_NO_DEPRECATE;_WIN32_WINNT=0x0501;NOMINMAX;WIN32_LEAN_AND_MEAN;HAVE_CONFIG_H;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\mysql56win\bld\include;D:\mysql56win\zlib;D:\mysql56win\include;D:\mysql56win\mysys;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\mysql56win\bld\include;D:\mysql56win\zlib;D:\mysql56win\include;D:\mysql56win\mysys;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\mysql56win\bld\include;D:\mysql56win\zlib;D:\mysql56win\include;D:\mysql56win\mysys;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <DisableSpecificWarnings>4800;4805;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;__WIN__;_CRT_SECURE_NO_DEPRECATE;_WIN32_WINNT=0x0501;NOMINMAX;WIN32_LEAN_AND_MEAN;HAVE_CONFIG_H;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DBUG_OFF;__WIN__;_CRT_SECURE_NO_DEPRECATE;_WIN32_WINNT=0x0501;NOMINMAX;WIN32_LEAN_AND_MEAN;HAVE_CONFIG_H;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\mysql56win\bld\include;D:\mysql56win\zlib;D:\mysql56win\include;D:\mysql56win\mysys;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\mysql56win\bld\include;D:\mysql56win\zlib;D:\mysql56win\include;D:\mysql56win\mysys;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\mysql56win\mysys\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/mysql56win/mysys/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/mysql56win -BD:/mysql56win/bld --check-stamp-file D:/mysql56win/bld/mysys/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/mysql56win/mysys/CMakeLists.txt;D:\mysql56win\mysys\CMakeLists.txt;D:\mysql56win\mysys\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\mysql56win\bld\mysys\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/mysql56win/mysys/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/mysql56win -BD:/mysql56win/bld --check-stamp-file D:/mysql56win/bld/mysys/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/mysql56win/mysys/CMakeLists.txt;D:\mysql56win\mysys\CMakeLists.txt;D:\mysql56win\mysys\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\mysql56win\bld\mysys\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/mysql56win/mysys/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/mysql56win -BD:/mysql56win/bld --check-stamp-file D:/mysql56win/bld/mysys/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/mysql56win/mysys/CMakeLists.txt;D:\mysql56win\mysys\CMakeLists.txt;D:\mysql56win\mysys\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\mysql56win\bld\mysys\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/mysql56win/mysys/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/mysql56win -BD:/mysql56win/bld --check-stamp-file D:/mysql56win/bld/mysys/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/mysql56win/mysys/CMakeLists.txt;D:\mysql56win\mysys\CMakeLists.txt;D:\mysql56win\mysys\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\mysql56win\bld\mysys\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\mysql56win\mysys\array.c" />
+    <ClCompile Include="D:\mysql56win\mysys\charset-def.c" />
+    <ClCompile Include="D:\mysql56win\mysys\charset.c" />
+    <ClCompile Include="D:\mysql56win\mysys\checksum.c" />
+    <ClCompile Include="D:\mysql56win\mysys\errors.c" />
+    <ClCompile Include="D:\mysql56win\mysys\hash.c" />
+    <ClCompile Include="D:\mysql56win\mysys\list.c" />
+    <ClCompile Include="D:\mysql56win\mysys\mf_cache.c" />
+    <ClCompile Include="D:\mysql56win\mysys\mf_dirname.c" />
+    <ClCompile Include="D:\mysql56win\mysys\mf_fn_ext.c" />
+    <ClCompile Include="D:\mysql56win\mysys\mf_format.c" />
+    <ClCompile Include="D:\mysql56win\mysys\mf_getdate.c" />
+    <ClCompile Include="D:\mysql56win\mysys\mf_iocache.c" />
+    <ClCompile Include="D:\mysql56win\mysys\mf_iocache2.c" />
+    <ClCompile Include="D:\mysql56win\mysys\mf_keycache.c" />
+    <ClCompile Include="D:\mysql56win\mysys\mf_keycaches.c" />
+    <ClCompile Include="D:\mysql56win\mysys\mf_loadpath.c" />
+    <ClCompile Include="D:\mysql56win\mysys\mf_pack.c" />
+    <ClCompile Include="D:\mysql56win\mysys\mf_path.c" />
+    <ClCompile Include="D:\mysql56win\mysys\mf_qsort.c" />
+    <ClCompile Include="D:\mysql56win\mysys\mf_qsort2.c" />
+    <ClCompile Include="D:\mysql56win\mysys\mf_radix.c" />
+    <ClCompile Include="D:\mysql56win\mysys\mf_same.c" />
+    <ClCompile Include="D:\mysql56win\mysys\mf_sort.c" />
+    <ClCompile Include="D:\mysql56win\mysys\mf_soundex.c" />
+    <ClCompile Include="D:\mysql56win\mysys\mf_arr_appstr.c" />
+    <ClCompile Include="D:\mysql56win\mysys\mf_tempdir.c" />
+    <ClCompile Include="D:\mysql56win\mysys\mf_tempfile.c" />
+    <ClCompile Include="D:\mysql56win\mysys\mf_unixpath.c" />
+    <ClCompile Include="D:\mysql56win\mysys\mf_wcomp.c" />
+    <ClCompile Include="D:\mysql56win\mysys\mulalloc.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_access.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_alloc.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_bit.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_bitmap.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_chsize.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_compress.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_copy.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_create.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_delete.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_div.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_error.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_file.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_fopen.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_fstream.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_gethwaddr.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_getsystime.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_getwd.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_compare.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_init.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_lib.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_lock.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_malloc.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_mess.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_mkdir.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_mmap.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_once.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_open.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_pread.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_pthread.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_quick.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_read.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_redel.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_rename.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_seek.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_sleep.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_static.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_symlink.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_symlink2.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_sync.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_thr_init.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_write.c" />
+    <ClCompile Include="D:\mysql56win\mysys\ptr_cmp.c" />
+    <ClCompile Include="D:\mysql56win\mysys\queues.c" />
+    <ClCompile Include="D:\mysql56win\mysys\stacktrace.c" />
+    <ClCompile Include="D:\mysql56win\mysys\string.c" />
+    <ClCompile Include="D:\mysql56win\mysys\thr_alarm.c" />
+    <ClCompile Include="D:\mysql56win\mysys\thr_lock.c" />
+    <ClCompile Include="D:\mysql56win\mysys\thr_mutex.c" />
+    <ClCompile Include="D:\mysql56win\mysys\thr_rwlock.c" />
+    <ClCompile Include="D:\mysql56win\mysys\tree.c" />
+    <ClCompile Include="D:\mysql56win\mysys\typelib.c" />
+    <ClCompile Include="D:\mysql56win\mysys\base64.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_memmem.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_getpagesize.c" />
+    <ClCompile Include="D:\mysql56win\mysys\lf_alloc-pin.c" />
+    <ClCompile Include="D:\mysql56win\mysys\lf_dynarray.c" />
+    <ClCompile Include="D:\mysql56win\mysys\lf_hash.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_atomic.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_getncpus.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_rdtsc.c" />
+    <ClCompile Include="D:\mysql56win\mysys\waiting_threads.c" />
+    <ClCompile Include="D:\mysql56win\mysys\psi_noop.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_winthread.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_wincond.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_winerr.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_winfile.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_windac.c" />
+    <ClCompile Include="D:\mysql56win\mysys\my_conio.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\mysql56win\bld\ZERO_CHECK.vcxproj">
+      <Project>{1E02B322-2F20-3C96-A837-9A2CA039DC19}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\strings\strings.vcxproj">
+      <Project>{734871BF-5F92-392A-AEE2-852201D352D0}</Project>
+      <Name>strings</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\mysql56win\bld\zlib\zlib.vcxproj">
+      <Project>{0C911BFA-6B50-3404-A003-8AF58668F7FF}</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
